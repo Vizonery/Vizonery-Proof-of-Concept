@@ -44,6 +44,9 @@ Y = df.iloc[:, -1].values
 # feature scaling (scale value and data between 0 and 1 inclusive)
 X = StandardScaler().fit_transform(X)
 
+
+#EVERYTHING UNTIL THIS POINT SHOULD BE THE SAME
+
 #make gridsearch params
 parameters = {
     'penalty':['l1', 'l2', 'elasticnet', 'none'],
