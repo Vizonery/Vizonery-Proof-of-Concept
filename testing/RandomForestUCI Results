@@ -1,0 +1,14 @@
+With 13 trees, criterion = gini, 0.99 on train, 0.807 on test
+With 4 trees, criterion = entropy, random state = 2, 0.95 on train, 0.8235 on test
+
+Random Grid Search:
+30	0.02	0	10	4	2	auto	8	0.89	0.85	0.06
+{'n_estimators': 7, 'min_samples_split': 8, 'min_samples_leaf': 5, 'max_features': 'sqrt', 'max_depth': 3, 'bootstrap': False}	0.77	0.89	0.9	0.85
+{'n_estimators': 8, 'min_samples_split': 5, 'min_samples_leaf': 6, 'max_features': 'auto', 'max_depth': 5, 'bootstrap': False}	0.78	0.88	0.91	0.86	0.06	1
+{'n_estimators': 7, 'min_samples_split': 8, 'min_samples_leaf': 5, 'max_features': 'sqrt', 'max_depth': 3, 'bootstrap': False}  0.77	0.89	0.9	0.85	0.06	2
+{'random_state': 1, 'n_estimators': 10, 'min_samples_split': 6, 'min_samples_leaf': 4, 'max_features': 'sqrt', 'max_depth': 2, 'criterion': 'entropy', 'bootstrap': False}	0.75	0.84	0.95	0.86	0.08	2
+{'random_state': 1, 'n_estimators': 10, 'min_samples_split': 7, 'min_samples_leaf': 1, 'max_features': 'auto', 'max_depth': 2, 'criterion': 'entropy', 'bootstrap': False}	0.75	0.84	0.95	0.86	0.08	2
+{'random_state': 0, 'n_estimators': 10, 'min_samples_split': 6, 'min_samples_leaf': 10, 'max_features': 'log2', 'max_depth': 5, 'criterion': 'gini', 'bootstrap': False}	0.76	0.78	0.9	0.88	0.94	0.85	0.07	4
+
+
+n_estimators=7, random_state=0, min_samples_split=2, min_samples_leaf=1, max_features='sqrt', max_depth=9, criterion='gini', bootstrap=True

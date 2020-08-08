@@ -10,19 +10,18 @@ from sklearn.metrics import confusion_matrix
 
 # load data
 # data set used: https://www.kaggle.com/sulianova/cardiovascular-disease-dataset/data
-df = pd.read_csv('cardio_train.csv', sep=';')
+df = pd.read_csv('cardio_train.csv', sep=',')
 
 # print first 7 rows of data
 print(df.head(7))
 
 # get shape of data
-
 print(df.shape)
 
 # count null values in each column
 print(df.isna().sum())
 
-# another way to check for null or missing values
+# another way to check for null or missing values, returns True or False
 print(df.isnull().values.any())
 
 # basic stats
